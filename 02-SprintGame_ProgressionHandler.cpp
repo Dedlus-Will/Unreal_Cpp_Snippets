@@ -14,9 +14,6 @@ void AProgressionHandler::BeginPlay()
 	Super::BeginPlay();
 	AProgressionHandler::difficulty = 0; // Set starting difficulty
 
-	// Load data table from filepath
-	dataTableAsset = Cast<UDataTable>(FSoftObjectPath("/Game/Blueprints/Assistance/Data/Level_Pool/DT_LevelPool_CPP.DT_LevelPool_CPP").TryLoad());
-
 	// Did the data table successfully load?
 	if (dataTableAsset)
 	{
